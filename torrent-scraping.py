@@ -41,7 +41,7 @@ print("link or margnet")
 torrentlink = input()
 
 if torrentlink == "link":
- a = div[1]
+ a = div[0]
  print("https://www.torrent9.ac"+ a['href'])
  print(" ")
  nu = nu + 1
