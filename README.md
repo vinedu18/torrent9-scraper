@@ -1,14 +1,14 @@
 # torrent9-scraper
 Torrent 9 scraper is for get a .torrent file or magnet link from a torrent page 
-install 
+#install 
 pip install requests
 pip install bs4
-Use 
+#Use 
 python torrent-scraping.py
 after you have three chois 
-films 
+#films 
 give the 50 last torrent
-series 
+#series 
 give the 50 last torrent
-the title of your series or films 
+#the title of your series or films 
 give the 50 title matches
