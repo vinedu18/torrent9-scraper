@@ -1,10 +1,12 @@
 # torrent9-scraper
 Torrent 9 scraper is for get a .torrent file or magnet link from a torrent page 
+
 ###install
 ```ssh
 pip install requests
 pip install bs4
 ```
+
 ####Use
 ```ssh
 python torrent-scraping.py
