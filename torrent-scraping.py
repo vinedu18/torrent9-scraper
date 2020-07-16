@@ -38,13 +38,15 @@ if response.ok:
 
     div = soup1.findAll('a', {'class': 'btn btn-danger download'})
     a = div[nu]
-
-    if nu == 0:
+    print("link or margnet")
+    torrentlink = input()
+    
+    if torrentlink == "link":
 
      print("https://www.torrent9.ac"+ a['href'])
      print(" ")
     nu = nu + 1
-   else:
+   elif torrentlink == "magnet":
     print(a['href'])
 
 
