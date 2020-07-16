@@ -26,7 +26,6 @@ if response.ok:
   title = a['title']
   size = td[1].contents
   id = id + 1
-
   print(str(id) + " "+str(title) + " " + str(link) + " " + str(size))
   if id == len(nr):
    print("Faite votre choix")
@@ -34,22 +33,20 @@ if response.ok:
    demande = int(choix) -1
    response1 = requests.get(links[int(demande)])
    soup1 = BeautifulSoup(response1.text,'html5lib' )
-   for l in range(2):
-
-    div = soup1.findAll('a', {'class': 'btn btn-danger download'})
-    a = div[nu]
-    print("link or margnet")
-    torrentlink = input()
-    
-    if torrentlink == "link":
-
-     print("https://www.torrent9.ac"+ a['href'])
-     print(" ")
-    nu = nu + 1
-   elif torrentlink == "magnet":
-    print(a['href'])
 
 
+div = soup1.findAll('a', {'class': 'btn btn-danger download'})
 
+print("link or margnet")
+torrentlink = input()
 
-
+if torrentlink == "link":
+ a = div[1]
+ print("https://www.torrent9.ac"+ a['href'])
+ print(" ")
+ nu = nu + 1
+elif torrentlink == "magnet":
+   a = div[1]
+   print(a['href'])
+else:
+    print("no result")
