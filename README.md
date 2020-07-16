@@ -25,7 +25,7 @@ series
 
 give the 50 last torrent
 ```ssh
-the title of your series or films
+the title of your serie or film
 ```
 
 give the 50 title matches
