@@ -12,9 +12,19 @@ pip install bs4
 python torrent-scraping.py
 ```
 after you have three chois 
-#films 
+
+```ssh
+films 
+```
 give the 50 last torrent
-#series 
+
+```ssh
+series 
+```
+
 give the 50 last torrent
-#the title of your series or films 
+```ssh
+the title of your series or films
+```
+
 give the 50 title matches
